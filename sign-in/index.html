@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sign-in.css">
+   <title>MOVIE.YO Sign In</title>
+   <script>
+      function showPass() {
+         pw = document.getElementById("password")
+         if(pw.type === "password") {pw.type = "text"}
+         else{pw.type = "password"}
+      }
+   </script>
+</head>
+<body>
+   <!-- DESKTOP -->
+   <div class="container wrapFlex" id="desktop">
+      <div class="leftFlex">
+         <div class="colorOpacity"></div>
+         <img class="logo" src="files/logo.png">
+         <p class="textBelowLogo">Be the vanguard of the Moviegoers</p>
+      </div>
+      <div class="rightFlex">
+         <div class="insideRightFlex" style="width: 70%;">
+         <div class="signInText">
+            <h1 style="font-size: 2.7vw; font-weight: 600; margin: 0; padding: 0;">Sign In</h1>
+            <p style="font-size: 0.9vw; color: #AAAAAA; text-align: justify;">Sign in with your data that you entered during your registration</p>
+         </div>
+         <form>
+            <label class="labelInput" for="email">Email</label>
+            <div class="borderInput" style="height: 1.5vw;">
+               <input class="input" type="email" id="email" placeholder="Write your email">
+            </div>
+            <label class="labelInput" for="password">Password</label>
+            <div class="borderInput" style="height: 1.5vw;">
+               <input class="input" type="password" id="password" placeholder="Write your password">
+               <img class="eyeLogo" src="files/eye.png" onclick="showPass()">
+            </div>
+            <input class="hoverEffect submitBtn" type="submit" value="Sign In">
+         </form>
+         <p class="resetPass">Forgot your password? 
+            <a class="hoverEffect resetNow" href=""><u>Reset now</u></a>
+         </p>
+         </div>
+         <p class="lineBreaks"><span>Or</span></p>
+         <div style="display: flex; justify-content:space-between; margin-top: 5%; width: 21vw;">
+            <a class="hoverEffect bottomBtn" href=""><img class="btnLogo" src="files/google.png">Google</a>
+            <a class="hoverEffect bottomBtn" href=""><img class="btnLogo" src="files/facebook.png">Facebook</a>
+         </div>
+      </div>
+   </div>
+   <!-- MOBILE -->
+   <div class="mobile" style="animation: appear 0.5s; height: auto; margin-top: 15%;" id="mobile">
+      <div class="insideRightFlex" style="margin: auto; width: 80%;">
+         <img src="files/purple.png" style="margin-bottom: 15%; width: 30%;">
+         <div class="signInText" style="margin-bottom: 15%;">
+            <h1 style="font-size: 7vw; font-weight: normal; margin: 0; padding: 0;">Sign In</h1>
+         </div>
+         <form>
+            <label class="labelInput mobile" for="email">Email</label>
+            <div class="borderInput" style="border-radius: 2vw; height: 10vw;">
+               <input class="input mobile" type="email" id="email" placeholder="Write your email">
+            </div>
+            <label class="labelInput mobile" for="password">Password</label>
+            <div class="borderInput" style="border-radius: 2vw; height: 10vw;">
+               <input class="input mobile" type="password" id="password" placeholder="Write your password">
+               <img class="eyeLogo" src="files/eye.png" onclick="showPass()">
+            </div>
+            <input class="hoverEffect submitBtn" type="submit" value="Sign In">
+         </form>
+         <p class="resetPass">Forgot your password? 
+            <a class="hoverEffect resetNow" href=""><u>Reset now</u></a>
+         </p>
+         </div>
+         <p class="lineBreaks"><span style="font-size: 3vw;">Or</span></p>
+         <div class="mobileBottomBtn" style="display: flex; justify-content:space-between; margin-top: 5%; width: 21vw;">
+            <a style="margin-left: -38%;" class="hoverEffect bottomBtn" href=""><img class="btnLogo" src="files/google.png"></a>
+            <a style="margin-left: 38%;" class="hoverEffect bottomBtn" href=""><img class="btnLogo" src="files/facebook.png"></a>
+         </div>
+      </div>
+   </div>
+</body>

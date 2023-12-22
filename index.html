@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOVIE.YO</title>
+
+  <!--- loading -->
+  <link rel="stylesheet" href="assets/css/loading.css">
+
+  <!--- favicon -->
+  <link rel="shortcut icon" href="./assests/images/logo.png" type="image/png">
+  
+
+  <!--- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <!--- #HEADER -->
+ <header class="header" data-header>
+      <div class="container">
+  
+        <div class="overlay" data-overlay></div>
+  
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/logo.png" alt="MOVIE.YO logo">
+
+        </a>
+  
+        <div class="header-actions">
+  
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+  
+          <div class="lang-wrapper">
+            <label for="language">
+              <ion-icon name="globe-outline"></ion-icon>
+            </label>
+  
+            <select name="language" id="language">
+              <option value="en">EN</option>
+              <option value="au">AU</option>
+              <option value="ar">AR</option>
+              <option value="tu">TU</option>
+            </select>
+          </div>
+  
+          <button class="btn btn-primary">Sign in</button>
+  
+        </div>
+  
+        <button class="menu-open-btn" data-menu-open-btn>
+          <ion-icon name="reorder-two"></ion-icon>
+        </button>
+  
+        <nav class="navbar" data-navbar>
+  
+          <div class="navbar-top">
+  
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/logo.png" alt="MOVIE.YO logo">
+            </a>
+  
+            <button class="menu-close-btn" data-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+  
+          </div>
+  
+          <ul class="navbar-list">
+  
+            <li>
+              <a href="./index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#now-playing" class="navbar-link">Movies</a>
+            </li>
+            
+  
+            <li>
+              <a href="#" class="navbar-link">Locations</a>
+            </li>
+  
+            <li>
+              <a href="#" class="navbar-link">Buy Ticket</a>
+            </li>
+  
+            <li>
+              <a href="#" class="navbar-link">Contact Us</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="navbar-social-list">
+  
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+        </nav>
+  
+      </div>
+    </header>
+
+
+
+
+    <main>
+      <article>
+
+        <!--- #HERO -->
+        <section class="hero">
+          <div class="container">
+
+            <div class="hero-content">
+
+              <p class="hero-subtitle">with <strong>MOVIE.YO</strong></p>
+
+              <h1 class="h1 hero-title">
+                Choose Your <strong>Movie</strong>, Be the vanguard of the Moviegoers
+              </h1>
+
+              <div class="meta-wrapper">
+
+                <div class="playing-wrapper">
+                  <a href="#">Now playing</a>
+
+                  <a href="#"> Upcoming</a>
+                </div>
+
+                <div class="date-time">
+
+                  <div>
+                    <ion-icon name="calendar-outline"></ion-icon>
+
+                    <time datetime="2023">2023</time>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+              <button class="btn btn-primary">
+                <ion-icon name="play"></ion-icon>
+
+                <span>Movies</span>
+              </button>
+
+            </div>
+
+          </div>
+        </section>
+
+      </article>
+    </main>
+  
+
+      <!--- #NOW PLAYING-->
+      <section id="now-playing" class="nowplaying"></section>
+      <section class="nowplaying">
+        <div class="container">
+
+          <p class="section-subtitle">MOVIES</p>
+
+          <h2 class="h2 section-title">NOW PLAYING</h2>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/172days.jpg" alt="172 days poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">172 Days</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">13+</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT47M">47 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.6</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/wonka.jpg" alt="wonka poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">wonka</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">SU</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/theboyandtheheron.jpg" alt= "the boy and the heron poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">The Boy and The Heron</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">SU</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/jatuhcinta.jpg" alt="jatuh cinta seperti di film-fillm poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Jatuh Cinta Seperti di Film-Film</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">15+</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/layanganputus.jpg" alt="layangan putus poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Layangan Putus The Movie</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">15+</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/hamka&sitiraham.jpg" alt="hamka dan siti raham vol 2 poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Hamka dan Siti Raham vol 2</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">15+</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">120 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+           <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/gampangcuan.jpg" alt="gampang cuan poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Gampang Cuan</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">13+</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">110 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!--- #UPCOMING-->
+
+      <section class="upcoming">
+        <div class="container">
+
+          <p class="section-subtitle">MOVIES</p>
+
+          <h2 class="h2 section-title">UPCOMING</h2>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/ancika.jpg" alt="ancika poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Ancika</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">12+</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT47M">47 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.6</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/aquaman.jpg" alt="aquaman poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Aquaman</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">SU</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/butejosowanjakarta.jpg" alt=bu tejo sowan jakarta poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Bu Tejo Sowan Jakarta</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">13+</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/gangnamzombie.jpg" alt="gangnam zombie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Gangnam Zombie</h3>
+                  </a>
+
+                  <time datetime="2023">2023</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">12+</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+    <!-- #CTA -->
+
+    <section class="cta">
+            <div class="container">
+
+              <div class="title-wrapper">
+                <h2 class="cta-title">Trial start first 30 days.</h2>
+
+                <p class="cta-text">
+                  Enter your email to create or restart your membership.
+                </p>
+              </div>
+
+              <form action="" class="cta-form">
+                <input type="email" name="email" required placeholder="Enter your email" class="email-field">
+
+                <button type="submit" class="cta-form-btn">Get started</button>
+              </form>
+
+            </div>
+      </section>
+
+        </article>
+      </main>
+    
+  
+  
+    <!--- #FOOTER -->
+  
+    <footer class="footer">
+  
+      <div class="footer-top">
+        <div class="container">
+  
+          <div class="footer-brand-wrapper">
+  
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/logo.png" alt="MOVIE.YO logo">
+            </a>
+  
+            <ul class="footer-list">
+  
+              <li>
+                <a href="./index.html" class="footer-link">Home</a>
+              </li>
+  
+              <li>
+                <a href="#" class="footer-link">Movies</a>
+              </li>
+  
+              <li>
+                <a href="#" class="footer-link">Locations</a>
+              </li>
+  
+              <li>
+                <a href="#" class="footer-link">Buy Ticket</a>
+              </li>
+  
+              <li>
+                <a href="#" class="footer-link">Contact Us</a>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+          <div class="divider"></div>
+  
+          <div class="quicklink-wrapper">
+  
+            <ul class="quicklink-list">
+  
+              <li>
+                <a href="#" class="quicklink-link">Faq</a>
+              </li>
+  
+              <li>
+                <a href="#" class="quicklink-link">Help center</a>
+              </li>
+  
+              <li>
+                <a href="#" class="quicklink-link">Terms of use</a>
+              </li>
+  
+              <li>
+                <a href="#" class="quicklink-link">Privacy</a>
+              </li>
+  
+            </ul>
+  
+            <ul class="social-list">
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="container">
+  
+          <p class="copyright">
+            &copy; 2023 <a href="#">Novia Devy Permatasari</a>. All Rights Reserved
+          </p>
+  
+          <img src="./assets/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
+  
+        </div>
+      </div>
+  
+    </footer>
+  
+  
+  
+    <!--- #GO TO TOP-->
+  
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+  
+    <!--- custom js link-->
+    <script src="./assets/js/script.js"></script>
+  
+    <!--- ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  </body>
+  
+  </html>
+
+    

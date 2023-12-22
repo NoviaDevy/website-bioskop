@@ -1,0 +1,147 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Mulish");
+
+html, body{
+   margin: 0; 
+   padding: 0;
+   background-color: #1a2527;}
+.wrapFlex{display: flex;}
+.leftFlex{
+   animation: slideLeft 1s;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: url("files/background.png");
+   background-position: 50% 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 60%;
+}
+slideLeft{from{left: -10vw; opacity: 0;} to{left: 0; opacity: 1;}}
+.colorOpacity{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: #2e2e30;
+   opacity: 0.8;
+}
+.logo{z-index: 1; width: 50%;}
+.textBelowLogo{
+   color: white;
+   margin: 0;
+   opacity: 0.8;
+   padding: 0;
+   font-family: "Inter", sans-serif;
+   font-size: 2.5vw;
+}
+.rightFlex{
+   align-items: center;
+   animation: appear 2s;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: auto;
+   width: 30%;
+   
+}
+appear{from{opacity: 0;} to{opacity: 1;}}
+.signInText{font-family: "Inter", sans-serif; margin-bottom: 15%; color: rgb(165, 42, 42);}
+.labelInput{color: #4E4B66; font-family: "Mulish"; font-size: 0.8vw;}
+.borderInput{
+   border: 0.1vw solid #DEDEDE;
+   border-radius: 0.5vw;
+   margin-top: 2.5%;
+   margin-bottom: 5%;
+   padding: 3.3%;
+   width: auto;
+}
+.input{
+   border: none;
+   color: #A0A3BD;
+   font-family: "Mulish";
+   font-size: 0.8vw;
+   height: 1.5vw;
+   position: absolute;
+}
+.input:focus{color: black; outline: none;}
+.input:invalid{box-shadow:none;}
+.eyeLogo{
+   display: inline;
+   float: right; 
+   opacity: 0.5;
+   height: 1vw;
+   margin: 0.3vw;
+   width: 1vw; 
+   transition-duration: 0.5s;
+}
+.eyeLogo:hover{cursor: pointer; opacity: 0.2;}
+.submitBtn{
+   background-color: #6839e9;
+   border: none;
+   border-radius: 0.5vw;
+   color: white;
+   font-family: "Mulish";
+   font-size: 0.8vw;
+   height: 3vw;
+   margin-top: 5%;
+   width: 100%;
+}
+.submitBtn:active{padding: 0;}
+.resetPass{
+   font-family: "Inter",sans-serif, white;
+   font-size: 0.8vw;
+   margin-top: 8%;
+   text-align: center
+}
+.resetNow{color: #5F2EEA; font-weight: bold;}
+.lineBreaks {
+   width: 70%; 
+   text-align: center; 
+   border-bottom: 1px solid #DEDEDE; 
+   line-height: 0.1vw;
+   margin-top: 5%;
+} 
+.lineBreaks span { 
+   background: white;
+   color: #AAAAAA;
+   font-family: "Inter",sans-serif;
+   font-size: 0.8vw;
+   padding: 0 2.5vw; 
+}
+.btnLogo{
+   height: 1vw;
+   margin-right: 1vw;
+   width: 1vw;
+}
+.bottomBtn{
+   background-color: white;
+   border-radius: 0.5vw;
+   box-shadow: 0px 0.2vw 0.4vw rgba(0, 0, 0, 0.08);
+   color: #A0A3BD;
+   display: flex;
+   font-family: "Mulish";
+   font-size: 0.8vw;
+   padding: 0.7vw 2.1vw;
+   text-align: center;
+}
+a:link{text-decoration: none;}
+.hoverEffect{cursor: pointer; transition-duration: 0.5s;}
+.hoverEffect:hover{opacity: 0.7;}
+
+#mobile {display: none;}
+@media screen and (min-width: 0px) and (max-width: 1000px){
+   #mobile {display: block;}
+   #desktop {display: none;}
+   .mobile {font-size: 3.8vw;color: white;}
+   .eyeLogo {height: 5vw; padding: 2.5vw; width: 5vw;}
+   .input {height: 8vw;}
+   .submitBtn {border-radius: 2vw; font-size: 5vw; height: 15vw; margin-top: 10%;}
+   .resetPass {font-size: 3.3vw; margin-bottom: 15%; color: white;}
+   .lineBreaks {margin: auto; width: 88%;}
+   .mobileBottomBtn {margin: auto; padding: 10%;}
+   .bottomBtn {border-radius: 1vw; padding: 3vw; box-shadow: 0px 1vw 2vw rgba(0, 0, 0, 0.08);}
+   .btnLogo {height: 8vw; margin: none; width: 8vw;}
+}
